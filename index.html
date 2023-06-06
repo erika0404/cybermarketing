@@ -3,15 +3,53 @@
 <head>
   <title>Restaurant</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .hero {
+      background-image: url('restaurant_image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      position: relative;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      margin-bottom: 20px;
+    }
+
+    .reservation-form label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Restaurant</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum finibus tortor, vitae eleifend est fringilla et.</p>
+    </div>
+  </div>
+
   <div class="container">
-    <h1 class="text-center">Welcome to Our Restaurant</h1>
-
-    <img src="restaurant_image.jpg" class="img-fluid" alt="Restaurant Image">
-
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum finibus tortor, vitae eleifend est fringilla et. Suspendisse ac nisl eu orci hendrerit finibus eu non metus. Sed nec tincidunt risus.</p>
-
     <h2>Menu</h2>
     <div class="row">
       <div class="col-md-4">
