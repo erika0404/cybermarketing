@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Restaurant</title>
+  <title>Pizza Hut Restaurant</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
+    body {
+      background-color: #FFCC66;
+    }
+
     .hero {
       background-image: url('restaurant_image.jpg');
       background-size: cover;
       background-position: center;
-      height: 500px;
-      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .hero-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fff;
       text-align: center;
+      color: #fff;
     }
 
     .hero-content h1 {
@@ -39,13 +41,36 @@
       display: block;
       margin-top: 10px;
     }
+
+    .ratings {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .ratings h2 {
+      margin-bottom: 10px;
+    }
+
+    .ratings .stars {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .map-container {
+      margin-bottom: 30px;
+    }
+
+    .map {
+      height: 400px;
+    }
   </style>
 </head>
 <body>
   <div class="hero">
     <div class="hero-content">
-      <h1>Welcome to Our Restaurant</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum finibus tortor, vitae eleifend est fringilla et.</p>
+      <h1>Welcome to Pizza Hut</h1>
+      <p>Discover our delicious range of pizzas, pastas, wings, and more.</p>
     </div>
   </div>
 
@@ -53,33 +78,34 @@
     <h2>Menu</h2>
     <div class="row">
       <div class="col-md-4">
+        <h3>Pizzas</h3>
+        <ul>
+          <li>Supreme Pizza</li>
+          <li>Margherita Pizza</li>
+          <li>Pepperoni Pizza</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Pastas</h3>
+        <ul>
+          <li>Chicken Alfredo Pasta</li>
+          <li>Spaghetti Bolognese</li>
+          <li>Cheese Stuffed Pasta</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
         <h3>Appetizers</h3>
         <ul>
-          <li>Appetizer 1</li>
-          <li>Appetizer 2</li>
-          <li>Appetizer 3</li>
-        </ul>
-      </div>
-
-      <div class="col-md-4">
-        <h3>Main Courses</h3>
-        <ul>
-          <li>Main Course 1</li>
-          <li>Main Course 2</li>
-          <li>Main Course 3</li>
-        </ul>
-      </div>
-
-      <div class="col-md-4">
-        <h3>Desserts</h3>
-        <ul>
-          <li>Dessert 1</li>
-          <li>Dessert 2</li>
-          <li>Dessert 3</li>
+          <li>Garlic Bread</li>
+          <li>Stuffed Garlic Knots</li>
+          <li>Mozzarella Sticks</li>
         </ul>
       </div>
     </div>
 
+    
     <h2>Reservation</h2>
     <form action="reservation_confirmation.html" method="POST">
       <div class="form-group">
