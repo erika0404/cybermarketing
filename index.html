@@ -2,100 +2,78 @@
 <html>
 <head>
   <title>Restaurant</title>
-  <style>
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h1 {
-      text-align: center;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    .menu-item {
-      margin-bottom: 20px;
-    }
-    .reservation-form label {
-      display: block;
-      margin-top: 10px;
-    }
-    .reservation-form input[type="text"],
-    .reservation-form input[type="email"],
-    .reservation-form input[type="date"],
-    .reservation-form input[type="time"],
-    .reservation-form select {
-      width: 100%;
-      padding: 5px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-    }
-    .reservation-form input[type="submit"] {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Our Restaurant</h1>
+    <h1 class="text-center">Welcome to Our Restaurant</h1>
 
-    <img src="restaurant_image.jpg" alt="Restaurant Image">
+    <img src="restaurant_image.jpg" class="img-fluid" alt="Restaurant Image">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum finibus tortor, vitae eleifend est fringilla et. Suspendisse ac nisl eu orci hendrerit finibus eu non metus. Sed nec tincidunt risus.</p>
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum finibus tortor, vitae eleifend est fringilla et. Suspendisse ac nisl eu orci hendrerit finibus eu non metus. Sed nec tincidunt risus.</p>
 
     <h2>Menu</h2>
-    <div class="menu-item">
-      <h3>Appetizers</h3>
-      <ul>
-        <li>Appetizer 1</li>
-        <li>Appetizer 2</li>
-        <li>Appetizer 3</li>
-      </ul>
-    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Appetizers</h3>
+        <ul>
+          <li>Appetizer 1</li>
+          <li>Appetizer 2</li>
+          <li>Appetizer 3</li>
+        </ul>
+      </div>
 
-    <div class="menu-item">
-      <h3>Main Courses</h3>
-      <ul>
-        <li>Main Course 1</li>
-        <li>Main Course 2</li>
-        <li>Main Course 3</li>
-      </ul>
-    </div>
+      <div class="col-md-4">
+        <h3>Main Courses</h3>
+        <ul>
+          <li>Main Course 1</li>
+          <li>Main Course 2</li>
+          <li>Main Course 3</li>
+        </ul>
+      </div>
 
-    <div class="menu-item">
-      <h3>Desserts</h3>
-      <ul>
-        <li>Dessert 1</li>
-        <li>Dessert 2</li>
-        <li>Dessert 3</li>
-      </ul>
+      <div class="col-md-4">
+        <h3>Desserts</h3>
+        <ul>
+          <li>Dessert 1</li>
+          <li>Dessert 2</li>
+          <li>Dessert 3</li>
+        </ul>
+      </div>
     </div>
 
     <h2>Reservation</h2>
-    <form class="reservation-form" action="reservation_confirmation.html" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <form action="reservation_confirmation.html" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-control" name="name" required>
+      </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" name="email" required>
+      </div>
 
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" required>
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" class="form-control" name="date" required>
+      </div>
 
-      <label for="time">Time:</label>
-      <input type="time" id="time" name="time" required>
+      <div class="form-group">
+        <label for="time">Time:</label>
+        <input type="time" id="time" class="form-control" name="time" required>
+      </div>
 
-      <label for="guests">Number of Guests:</label>
-      <input type="number" id="guests" name="guests" required>
+      <div class="form-group">
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" class="form-control" name="guests" required>
+      </div>
 
-      <input type="submit" value="Make Reservation">
+      <button type="submit" class="btn btn-primary">Make Reservation</button>
     </form>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
